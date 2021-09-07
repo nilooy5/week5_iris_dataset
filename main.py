@@ -9,7 +9,7 @@ c = Canvas(tk_window, bg="white", height=400, width=400)
 radius = 1.5
 spread = 50
 
-for x, y, z, w, cls in dataSet:
+for x, y, z, w, flower_class in dataSet:
     c.create_oval(x * spread - radius, y * spread - radius, x * spread + radius, y * spread + radius, outline="red", fill="red")
 
 c.pack()
